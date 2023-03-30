@@ -22,9 +22,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/legion/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/legion/sepolicy/common/dynamic \
-    device/legion/sepolicy/common/system
+    device/legion/sepolicy/common/dynamic
 
 ifneq ($(TARGET_HAL_POWER_RW_INPUT_DEVICE), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
