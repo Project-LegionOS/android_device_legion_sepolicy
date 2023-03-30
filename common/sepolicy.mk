@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Lineage
+# inherit from legion
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -16,21 +16,21 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/public
+    device/legion/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/private
+    device/legion/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 
-    device/lineage/sepolicy/common/dynamic
+    device/legion/sepolicy/common/dynamic
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/dynamic \
-    device/lineage/sepolicy/common/vendor
+    device/legion/sepolicy/common/dynamic \
+    device/legion/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/lineage/sepolicy/legacy-common/sepolicy.mk
+-include device/legion/sepolicy/legacy-common/sepolicy.mk
