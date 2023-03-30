@@ -22,9 +22,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/lineage/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/common/dynamic \
-    device/lineage/sepolicy/common/system
+
+    device/lineage/sepolicy/common/dynamic
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/lineage/sepolicy/common/dynamic \
