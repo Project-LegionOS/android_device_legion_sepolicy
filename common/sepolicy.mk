@@ -22,10 +22,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/legion/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
-
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 
-    device/legion/sepolicy/common/dynamic
+    device/legion/sepolicy/common/dynamic \
+    device/legion/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/legion/sepolicy/common/dynamic \
